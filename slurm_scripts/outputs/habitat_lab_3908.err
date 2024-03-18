@@ -1,0 +1,10 @@
+[21:45:26:280906]:[Warning]:[Assets] ResourceManager.cpp(369)::loadSemanticSceneDescriptor : SSD File Naming Issue! Neither SceneInstanceAttributes-provided name : `/weka/scratch/tshu2/sye10/habitat/habitat-sim/data/scene_datasets/habitat-test-scenes/apartment_1.scn` nor constructed filename : `/weka/scratch/tshu2/sye10/habitat/habitat-sim/data/scene_datasets/habitat-test-scenes/info_semantic.json` exist on disk.
+[21:45:26:950954]:[Warning]:[Sim] Simulator.cpp(533)::instanceStageForSceneAttributes : The active scene does not contain semantic annotations : activeSemanticSceneID_ = 0
+Traceback (most recent call last):
+  File "/weka/scratch/tshu2/sye10/habitat/python_scripts/image_extractor_tutorial.py", line 27, in <module>
+    extractor = ImageExtractor(
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.0-py3.9-linux-x86_64.egg/habitat_sim/utils/data/data_extractor.py", line 122, in __init__
+    self.poses = self.pose_extractor.extract_all_poses()
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.0-py3.9-linux-x86_64.egg/habitat_sim/utils/data/pose_extractor.py", line 63, in extract_all_poses
+    return np.array(poses)
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (45, 3) + inhomogeneous part.

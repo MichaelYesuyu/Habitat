@@ -1,0 +1,14 @@
+[21:46:14:176016]:[Error]:[Metadata] StageAttributesManager.cpp(89)::registerObjectFinalize : Render asset template handle `data/scene_datasets/habitat-test-scenes/apartment_1.glb` specified in stage template with handle :data/scene_datasets/habitat-test-scenes/apartment_1.glbdoes not correspond to any existing file or primitive render asset, so StageAttributes registration is aborted.
+Traceback (most recent call last):
+  File "/weka/scratch/tshu2/sye10/habitat/python_scripts/image_extractor_tutorial.py", line 27, in <module>
+    extractor = ImageExtractor(
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.0-py3.9-linux-x86_64.egg/habitat_sim/utils/data/data_extractor.py", line 98, in __init__
+    sim = habitat_sim.Simulator(self.cfg)
+  File "<attrs generated init habitat_sim.simulator.Simulator>", line 11, in __init__
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.0-py3.9-linux-x86_64.egg/habitat_sim/simulator.py", line 118, in __attrs_post_init__
+    self.__set_from_config(self.config)
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.0-py3.9-linux-x86_64.egg/habitat_sim/simulator.py", line 227, in __set_from_config
+    self._config_backend(config)
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.0-py3.9-linux-x86_64.egg/habitat_sim/simulator.py", line 200, in _config_backend
+    super().__init__(config.sim_cfg, config.metadata_mediator)
+AssertionError: ESP_CHECK failed: No Stage Attributes exists for requested scene 'data/scene_datasets/habitat-test-scenes/apartment_1.glb' in currently specified Scene Dataset `default`. Likely cause is either the Scene Dataset Configuration requested was not found, or the paths to the various dataset component configuration files (i.e. stage, object, scene instance, etc.) specified in the Scene Dataset Configuration file cannot be found. Verify the paths and filenames for the desired Scene Dataset Configuration file and the paths specified within the file.

@@ -14,4 +14,4 @@ conda activate habitat2
 
 nvidia-smi
 
-python /weka/scratch/tshu2/sye10/habitat/python_scripts/basic_navigation.py
+python /weka/scratch/tshu2/sye10/habitat/python_scripts/image_extractor_tutorial.py
