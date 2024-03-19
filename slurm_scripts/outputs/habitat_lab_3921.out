@@ -1,0 +1,193 @@
+Mon Mar 18 23:46:50 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  | 00000000:4B:00.0 Off |                    0 |
+| N/A   25C    P0              58W / 400W |      4MiB / 81920MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Renderer: NVIDIA A100-SXM4-80GB/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 545.23.08
+Using optional features:
+    GL_ARB_vertex_array_object
+    GL_ARB_separate_shader_objects
+    GL_ARB_robustness
+    GL_ARB_texture_storage
+    GL_ARB_texture_view
+    GL_ARB_framebuffer_no_attachments
+    GL_ARB_invalidate_subdata
+    GL_ARB_texture_storage_multisample
+    GL_ARB_multi_bind
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_texture_filter_anisotropic
+    GL_KHR_debug
+    GL_KHR_parallel_shader_compile
+    GL_NV_depth_buffer_float
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+Renderer: NVIDIA A100-SXM4-80GB/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 545.23.08
+Using optional features:
+    GL_ARB_vertex_array_object
+    GL_ARB_separate_shader_objects
+    GL_ARB_robustness
+    GL_ARB_texture_storage
+    GL_ARB_texture_view
+    GL_ARB_framebuffer_no_attachments
+    GL_ARB_invalidate_subdata
+    GL_ARB_texture_storage_multisample
+    GL_ARB_multi_bind
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_texture_filter_anisotropic
+    GL_KHR_debug
+    GL_KHR_parallel_shader_compile
+    GL_NV_depth_buffer_float
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+Renderer: NVIDIA A100-SXM4-80GB/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 545.23.08
+Using optional features:
+    GL_ARB_vertex_array_object
+    GL_ARB_separate_shader_objects
+    GL_ARB_robustness
+    GL_ARB_texture_storage
+    GL_ARB_texture_view
+    GL_ARB_framebuffer_no_attachments
+    GL_ARB_invalidate_subdata
+    GL_ARB_texture_storage_multisample
+    GL_ARB_multi_bind
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_texture_filter_anisotropic
+    GL_KHR_debug
+    GL_KHR_parallel_shader_compile
+    GL_NV_depth_buffer_float
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+Renderer: NVIDIA A100-SXM4-80GB/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 545.23.08
+Using optional features:
+    GL_ARB_vertex_array_object
+    GL_ARB_separate_shader_objects
+    GL_ARB_robustness
+    GL_ARB_texture_storage
+    GL_ARB_texture_view
+    GL_ARB_framebuffer_no_attachments
+    GL_ARB_invalidate_subdata
+    GL_ARB_texture_storage_multisample
+    GL_ARB_multi_bind
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_texture_filter_anisotropic
+    GL_KHR_debug
+    GL_KHR_parallel_shader_compile
+    GL_NV_depth_buffer_float
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+data_path = /weka/scratch/tshu2/sye10/habitat/habitat-sim/data
+agent_state: position [-0.6  0.   0. ] rotation quaternion(1, 0, 0, 0)
+Discrete action space:  ['move_forward', 'turn_left', 'turn_right']
+action:  turn_right
+action:  turn_right
+action:  move_forward
+action:  turn_left
+House has 1 levels, 10 regions and 187 objects
+House center:[-2.7928104  1.3372791 -1.5051247] dims:[17.57338    2.9023619  8.8595495]
+Level id:0, center:[-3.1573648  1.33728   -1.5051247], dims:[16.69967    2.90236    8.8595495]
+Region id:0_0, category:bedroom, center:[-8.821845   1.2594094 -2.691538 ], dims:[4.163309  2.5356622 4.2073426]
+Object id:0_0_0, category:wall, center:[-8.86568    1.2817702 -2.73879  ], dims:[4.5891   2.581481 4.591819]
+Object id:0_0_1, category:ceiling, center:[-8.91329  2.20326 -2.80575], dims:[4.4761996 0.7124367 4.460079 ]
+Object id:0_0_2, category:misc, center:[-8.69572    1.1633401 -4.2134695], dims:[2.5021195  2.3407402  0.61950994]
+Object id:0_0_3, category:curtain, center:[-10.9129      1.0454602  -2.9228697], dims:[0.49171448 2.13486    3.8549194 ]
+Object id:0_0_4, category:void, center:[-8.06444    1.4491597 -1.7219999], dims:[0.6184306 1.5347226 0.8975539]
+Object id:0_0_5, category:bed, center:[-8.71032    0.6567161 -2.7839994], dims:[2.0257607 1.2672682 2.45652  ]
+Object id:0_0_6, category:void, center:[-6.79918  1.40336 -1.91666], dims:[0.2847662  0.8195841  0.08472037]
+Object id:0_0_7, category:tv_monitor, center:[-10.9803    1.01896  -1.43764], dims:[0.93102264 0.674376   1.2230382 ]
+Object id:0_0_9, category:chest_of_drawers, center:[-9.89281     0.31491923 -3.5474799 ], dims:[0.57509613 0.63675594 0.47650623]
+Object id:0_0_10, category:cushion, center:[-9.2041     0.5827892 -3.71507  ], dims:[1.0096397  0.90284204 0.31469202]
+agent_state: position [-0.6  0.   0. ] rotation quaternion(1, 0, 0, 0)
+action move_forward
+action turn_right
+action move_forward
+action turn_left
+action move_forward
+The NavMesh bounds are: (array([-11.59344 ,  -0.127553,  -5.392021], dtype=float32), array([4.757026, 4.278783, 2.88662 ], dtype=float32))
+Displaying the raw map from get_topdown_view:
+Displaying the map from the Habitat-Lab maps module:
+NavMesh area = 52.03893280029297
+Bounds = (array([-11.59344 ,  -0.127553,  -5.392021], dtype=float32), array([4.757026, 4.278783, 2.88662 ], dtype=float32))
+Random navigable point : [ 3.006108   0.072447  -2.6786702]
+Is point navigable? True
+Nav island radius : 8.03792953491211
+Distance to obstacle: 0.33871790766716003
+Closest obstacle HitRecord:
+ point: [ 3.3022008  0.072447  -2.5141742]
+ normal: [-0.8741573   0.         -0.48564288]
+ distance: 0.33871790766716003
+Perturbed point : [ 3.4770322  0.072447  -2.4170456]
+Is point navigable? False
+Snapped point : [ 3.3022008  0.072447  -2.5141742]
+Is point navigable? True
+
+Display the map with key_point overlay:
+found_path : True
+geodesic_distance : 11.360601425170898
+path_points : [array([-8.606648 ,  0.072447 , -4.4369855], dtype=float32), array([-7.49344  ,  0.072447 , -4.1920214], dtype=float32), array([-7.39344 ,  0.072447, -4.142021], dtype=float32), array([-7.14344 ,  0.072447, -3.742021], dtype=float32), array([-6.94344 ,  0.072447, -2.042021], dtype=float32), array([-6.79344  ,  0.072447 , -1.9920211], dtype=float32), array([-1.1434402,  0.072447 , -0.9420209], dtype=float32), array([-0.7434397,  0.072447 , -0.7920213], dtype=float32), array([-0.6934395,  0.072447 , -0.6920209], dtype=float32), array([-0.6934395 ,  0.072447  ,  0.10797882], dtype=float32), array([-0.79343987,  0.072447  ,  0.20797873], dtype=float32), array([-1.2815362 ,  0.072447  ,  0.43957818], dtype=float32)]
+
+Display the map with agent and path overlay:
+Rendering observations at path points:
+Successfully snapped point to: [ 0.       -1.575283  0.      ]
+Agent state: AgentState(position=array([ 0.      , -1.575283,  0.      ], dtype=float32), rotation=quaternion(0.7109135389328, -0, -0.703279376029968, -0), sensor_states={'color_sensor': SixDOFPose(position=array([ 0.        , -0.07528305,  0.        ], dtype=float32), rotation=quaternion(0.7109135389328, 0, -0.703279376029968, 0)), 'depth_sensor': SixDOFPose(position=array([ 0.        , -0.07528305,  0.        ], dtype=float32), rotation=quaternion(0.7109135389328, 0, -0.703279376029968, 0)), 'semantic_sensor': SixDOFPose(position=array([ 0.        , -0.07528305,  0.        ], dtype=float32), rotation=quaternion(0.7109135389328, 0, -0.703279376029968, 0))})
+ position = [ 0.       -1.575283  0.      ]
+ rotation = quaternion(0.7109135389328, -0, -0.703279376029968, -0)
+ orientation (about Y) = 1.56
+
+Display topdown map with agent:
+Saved NavMesh to "/weka/scratch/tshu2/sye10/habitat/habitat-sim/data/test_saving.navmesh"
+fps = 60
+nav_sliding
+time_step = 0.016666666666666666
+frames = 600
+Encoding the video: /weka/scratch/tshu2/sye10/habitat/outputscontinuous_nav.mp4 

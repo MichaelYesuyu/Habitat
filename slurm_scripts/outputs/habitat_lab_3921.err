@@ -1,0 +1,18 @@
+/weka/scratch/tshu2/sye10/habitat/python_scripts/basic_navigation.py:59: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  plt.figure(figsize=(12, 8))
+[23:47:02:479055]:[Warning]:[Assets] ResourceManager.cpp(369)::loadSemanticSceneDescriptor : SSD File Naming Issue! Neither SceneInstanceAttributes-provided name : `/weka/scratch/tshu2/sye10/habitat/habitat-sim/data/scene_datasets/habitat-test-scenes/apartment_1.scn` nor constructed filename : `/weka/scratch/tshu2/sye10/habitat/habitat-sim/data/scene_datasets/habitat-test-scenes/info_semantic.json` exist on disk.
+[23:47:03:160227]:[Warning]:[Sim] Simulator.cpp(533)::instanceStageForSceneAttributes : The active scene does not contain semantic annotations : activeSemanticSceneID_ = 0
+Traceback (most recent call last):
+  File "/weka/scratch/tshu2/sye10/habitat/python_scripts/basic_navigation.py", line 888, in <module>
+    vut.make_video(
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.0-py3.9-linux-x86_64.egg/habitat_sim/utils/viz_utils.py", line 259, in make_video
+    display_video(video_file)
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.0-py3.9-linux-x86_64.egg/habitat_sim/utils/viz_utils.py", line 107, in display_video
+    subprocess.call([opener, video_file])
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/subprocess.py", line 1837, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'xdg-open'
