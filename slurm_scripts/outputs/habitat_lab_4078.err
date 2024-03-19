@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/weka/scratch/tshu2/sye10/habitat/python_scripts/interaction_task_test.py", line 18, in <module>
+    from habitat.config import Config
+ImportError: cannot import name 'Config' from 'habitat.config' (/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/config/__init__.py)
