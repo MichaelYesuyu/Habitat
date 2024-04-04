@@ -1,0 +1,19 @@
+[00:18:08:927568]:[Error]:[IO] JsonStlTypes.h(119)::readMember<std::map<std::basic_string<char>, std::basic_string<char> > > : Invalid string value specified in JSON config semantic_scene_descriptor_instances at default_attributes . Skipping.
+[00:18:08:927621]:[Error]:[IO] JsonStlTypes.h(119)::readMember<std::map<std::basic_string<char>, std::basic_string<char> > > : Invalid string value specified in JSON config semantic_scene_descriptor_instances at paths . Skipping.
+[00:18:09:202461]:[Warning]:[Metadata] MetadataMediator.cpp(578)::getFilePathForHandle : <getSemanticSceneDescriptorPathByHandle> : Unable to find file path for %%CONFIG_NAME_AS_ASSET_FILENAME%%.semantic_config.json , so returning empty string.
+[00:18:09:261402]:[Warning]:[Metadata] MetadataMediator.cpp(578)::getFilePathForHandle : <getSemanticSceneDescriptorPathByHandle> : Unable to find file path for %%CONFIG_NAME_AS_ASSET_FILENAME%%.semantic_config.json , so returning empty string.
+[00:18:09:265236]:[Warning]:[Sim] Simulator.cpp(533)::instanceStageForSceneAttributes : The active scene does not contain semantic annotations : activeSemanticSceneID_ = 0
+Traceback (most recent call last):
+  File "/weka/scratch/tshu2/sye10/habitat/python_scripts/agent/multi_agent_test.py", line 86, in <module>
+    sim = init_rearrange_sim(agent_dict)
+  File "/weka/scratch/tshu2/sye10/habitat/python_scripts/agent/multi_agent_test.py", line 71, in init_rearrange_sim
+    sim = RearrangeSim(cfg)
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/tasks/rearrange/rearrange_sim.py", line 119, in __init__
+    self.agents_mgr = ArticulatedAgentManager(self.habitat_config, self)
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/tasks/rearrange/articulated_agent_manager.py", line 80, in __init__
+    agent = agent_cls(agent_cfg, sim)
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/articulated_agents/humanoids/kinematic_humanoid.py", line 88, in __init__
+    self._set_rest_pose_path(agent_cfg.motion_data_path)
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/articulated_agents/humanoids/kinematic_humanoid.py", line 95, in _set_rest_pose_path
+    with open(rest_pose_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: ''

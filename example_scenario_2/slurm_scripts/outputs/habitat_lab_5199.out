@@ -1,0 +1,15 @@
+No data-path provided, defaults to: ./data. Use '--data-path' to specify another location.
+Found the existing repo for (replica_cad_dataset): /weka/scratch/tshu2/sye10/habitat/habitat-lab/data/versioned_data/replica_cad_dataset
+ checking out v1.6 and pulling changes from repo.
+=======================================================
+Not replacing data, generating symlink (/weka/scratch/tshu2/sye10/habitat/habitat-lab/data/replica_cad).
+Generating symlink (/weka/scratch/tshu2/sye10/habitat/habitat-lab/data/replica_cad).
+=======================================================
+Found the existing repo for (hab_fetch): /weka/scratch/tshu2/sye10/habitat/habitat-lab/data/versioned_data/hab_fetch
+ checking out v2.0 and pulling changes from repo.
+=======================================================
+Not replacing data, generating symlink (/weka/scratch/tshu2/sye10/habitat/habitat-lab/data/robots/hab_fetch).
+Generating symlink (/weka/scratch/tshu2/sye10/habitat/habitat-lab/data/robots/hab_fetch).
+=======================================================
+Found the existing repo for (ycb): /weka/scratch/tshu2/sye10/habitat/habitat-lab/data/versioned_data/ycb
+ checking out main and pulling changes from repo.

@@ -1,0 +1,72 @@
+defaults:
+  - _self_
+  - /habitat: habitat_config_base
+  - /habitat/task: pointnav
+  - /habitat/simulator/agents@habitat.simulator.agents.agent1: agent_base
+  - /habitat/simulator/agents@habitat.simulator.agents.agent2: agent_base
+  - /habitat/task/actions:
+    - move_forward
+    - turn_left
+    - turn_right
+    - stop
+  - /habitat/task/lab_sensors:
+    - gps_sensor
+    - compass_sensor
+  - /habitat/task/measurements:
+    - distance_to_goal
+    - success
+    - spl
+
+habitat:
+  seed: 100
+  env_task: GymHabitatEnv
+  environment:
+    max_episode_steps: 500 # Adjusted for typical PointNav tasks
+  task:
+    type: PointNav-v1
+    success_measure: success
+    reward_measure: spl
+    end_on_success: true
+  simulator:
+    type: Sim-v0
+    scene: '/weka/scratch/tshu2/sye10/habitat/habitat-sim/data/scene_datasets/habitat-test-scenes/skokloster-castle.glb'
+    default_agent_id: 0
+    agents_order: ["agent1", "agent2"]
+    agents:
+      agent1:
+        height: 1.5
+        radius: 0.2
+        max_climb: 0.5
+        max_slope: 45.0
+      agent2:
+        height: 1.5
+        radius: 0.2
+        max_climb: 0.5
+        max_slope: 45.0
+    sim_sensors:
+        - uuid: agent1_rgb
+          type: "rgb_sensor"  
+          position: [0, 1.5, 0]  # Adjust as needed
+          orientation: [0, 0, 0, 1]  # Adjust as needed
+          resolution: [640, 480]
+        - uuid: agent1_depth
+          type: "depth_sensor"  
+          position: [0, 1.5, 0]  # Adjust as needed
+          orientation: [0, 0, 0, 1]  # Adjust as needed
+          resolution: [640, 480]
+        - uuid: agent2_rgb
+          type: "rgb_sensor"  
+          position: [0, 1.5, 0]  # Adjust as needed
+          orientation: [0, 0, 0, 1]  # Adjust as needed
+          resolution: [640, 480]
+        - uuid: agent2_depth
+          type: "depth_sensor"  
+          position: [0, 1.5, 0]  # Adjust as needed
+          orientation: [0, 0, 0, 1]  # Adjust as needed
+          resolution: [640, 480]
+  dataset:
+    type: PointNav-v1
+    split: train
+    scenes_dir: '/weka/scratch/tshu2/sye10/habitat/habitat-sim/data/scene_datasets'
+    data_path: '/weka/scratch/tshu2/sye10/habitat/habitat-sim/data/datasets/pointnav/habitat-test-scenes/v1/{split}/{split}.json.gz'
+    content_scenes: ["*"]

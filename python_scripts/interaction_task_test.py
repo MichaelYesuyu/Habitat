@@ -15,8 +15,9 @@ from PIL import Image
 
 import habitat
 import habitat_sim
-from habitat.config import Config
+#from habitat.config import Config
 from habitat.core.registry import registry
+from habitat_sim.utils import common as utils
 from habitat_sim.utils import viz_utils as vut
 
 repo = git.Repo("/weka/scratch/tshu2/sye10/habitat/habitat-sim", search_parent_directories=True)
@@ -156,7 +157,7 @@ def make_cfg(settings):
     sim_cfg = habitat_sim.SimulatorConfiguration()
     sim_cfg.gpu_device_id = 0
     sim_cfg.default_agent_id = settings["default_agent_id"]
-    sim_cfg.scene.id = settings["scene"]
+    sim_cfg.scene_id = settings["scene"]
     sim_cfg.enable_physics = settings["enable_physics"]
     sim_cfg.physics_config_file = settings["physics_config_file"]
 
@@ -202,12 +203,16 @@ def make_cfg(settings):
 
     return habitat_sim.Configuration(sim_cfg, [agent_cfg])
 
+test_scene = os.path.join(
+    data_path, "scene_datasets/coda/coda.glb"
+)
+
 
 settings = {
     "max_frames": 10,
     "width": 256,
     "height": 256,
-    "scene": "data/scene_datasets/coda/coda.glb",
+    "scene": test_scene,
     "default_agent_id": 0,
     "sensor_height": 1.5,  # Height of sensors in meters
     "rgb": True,  # RGB sensor

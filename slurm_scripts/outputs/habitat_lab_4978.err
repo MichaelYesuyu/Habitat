@@ -1,0 +1,26 @@
+2024-04-03 00:35:03,789 Initializing dataset RearrangeDataset-v0
+2024-04-03 00:35:03,791 initializing sim RearrangeSim-v0
+[00:35:03:824257]:[Error]:[IO] JsonStlTypes.h(119)::readMember<std::map<std::basic_string<char>, std::basic_string<char> > > : Invalid string value specified in JSON config semantic_scene_descriptor_instances at default_attributes . Skipping.
+[00:35:03:824305]:[Error]:[IO] JsonStlTypes.h(119)::readMember<std::map<std::basic_string<char>, std::basic_string<char> > > : Invalid string value specified in JSON config semantic_scene_descriptor_instances at paths . Skipping.
+[00:35:04:096453]:[Warning]:[Metadata] MetadataMediator.cpp(578)::getFilePathForHandle : <getSemanticSceneDescriptorPathByHandle> : Unable to find file path for %%CONFIG_NAME_AS_ASSET_FILENAME%%.semantic_config.json , so returning empty string.
+[00:35:04:156114]:[Warning]:[Metadata] MetadataMediator.cpp(578)::getFilePathForHandle : <getSemanticSceneDescriptorPathByHandle> : Unable to find file path for %%CONFIG_NAME_AS_ASSET_FILENAME%%.semantic_config.json , so returning empty string.
+[00:35:04:159995]:[Warning]:[Sim] Simulator.cpp(533)::instanceStageForSceneAttributes : The active scene does not contain semantic annotations : activeSemanticSceneID_ = 0
+2024-04-03 00:35:04,322 Initializing task RearrangeEmptyTask-v0
+Traceback (most recent call last):
+  File "/weka/scratch/tshu2/sye10/habitat/python_scripts/scenes/humanAgentScene.py", line 196, in <module>
+    env = init_rearrange_env(agent_dict, action_dict)
+  File "/weka/scratch/tshu2/sye10/habitat/python_scripts/scenes/humanAgentScene.py", line 181, in init_rearrange_env
+    return Env(res_cfg)
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/core/env.py", line 118, in __init__
+    self._task = make_task(
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/tasks/registration.py", line 22, in make_task
+    return _task(**kwargs)
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/tasks/rearrange/rearrange_task.py", line 75, in __init__
+    super().__init__(sim=sim, dataset=dataset, **kwargs)
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/tasks/nav/nav.py", line 1325, in __init__
+    super().__init__(config=config, sim=sim, dataset=dataset)
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/core/embodied_task.py", line 263, in __init__
+    self.actions = self._init_entities(
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/core/embodied_task.py", line 282, in _init_entities
+    assert (
+AssertionError: invalid humanoid_navigate_action type OracleNavCoordinateAction

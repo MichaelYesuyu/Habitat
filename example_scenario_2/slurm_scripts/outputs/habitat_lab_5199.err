@@ -1,0 +1,26 @@
+2024-04-04 16:07:44,714 Initializing dataset RearrangeDataset-v0
+2024-04-04 16:07:44,714 Rearrange task assets are not downloaded locally, downloading and extracting now...
+Traceback (most recent call last):
+  File "/weka/scratch/tshu2/sye10/habitat/example_scenario_2/env/example_scenario.py", line 181, in <module>
+    env = habitat.Env(config=config)
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/core/env.py", line 88, in __init__
+    self._dataset = make_dataset(
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/datasets/registration.py", line 22, in make_dataset
+    return _dataset(**kwargs)  # type: ignore
+  File "/weka/scratch/tshu2/sye10/habitat/habitat-lab/habitat-lab/habitat/datasets/rearrange/rearrange_dataset.py", line 62, in __init__
+    data_downloader.main(
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.1-py3.9-linux-x86_64.egg/habitat_sim/utils/datasets_download.py", line 928, in main
+    download_and_place(
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.1-py3.9-linux-x86_64.egg/habitat_sim/utils/datasets_download.py", line 730, in download_and_place
+    checkout_repo_tag(repo, version_dir, version_tag)
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/habitat_sim-0.3.1-py3.9-linux-x86_64.egg/habitat_sim/utils/datasets_download.py", line 607, in checkout_repo_tag
+    repo.git.checkout(f"{tag}")
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/git/cmd.py", line 800, in <lambda>
+    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/git/cmd.py", line 1386, in _call_process
+    return self.execute(call, **exec_kwargs)
+  File "/weka/scratch/tshu2/sye10/miniconda3/envs/habitat2/lib/python3.9/site-packages/git/cmd.py", line 1183, in execute
+    raise GitCommandError(redacted_command, status, stderr_value, stdout_value)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(1)
+  cmdline: git checkout main
+  stderr: 'error: pathspec 'main' did not match any file(s) known to git'

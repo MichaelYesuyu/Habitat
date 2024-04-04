@@ -1,0 +1,183 @@
+# @package _global_
+habitat:
+  seed: 100
+  environment:
+    max_episode_steps: 1000
+    max_episode_seconds: 10000000
+    iterator_options: 
+      cycle: True
+      shuffle: True
+      group_by_scene: True
+      num_episode_sample: -1
+      max_scene_repeat_episodes: -1
+      max_scene_repeat_steps: 10000
+      step_repetition_range: 0.2
+  task:
+    type: "RearrangeEmptyTask-v0"
+    physics_target_sps: 60.0
+    reward_measure: success
+    success_measure: spl
+    success_reward: 2.5
+    slack_reward: -0.01
+    end_on_success: False
+    lab_sensors:
+      gps_sensor:
+        type: "GPSSensor"
+        dimensionality: 2
+    measurements:
+      robot_force:
+        type: "RobotForce"
+        min_force: 20.0
+    rank0_env0_measure_names: ["habitat_perf"]
+    rank0_measure_names: None
+    goal_sensor_uuid: "pointgoal"
+    count_obj_collisions: True
+    settle_steps: 5
+    constraint_violation_ends_episode: True
+    constraint_violation_drops_object: False
+    force_regenerate: False
+    should_save_to_cache: False
+    object_in_hand_sample_prob: 0.167
+    min_start_distance: 3.0
+    gfx_replay_dir: "data/replays"
+    render_target: True
+    filter_colliding_states: True
+    num_spawn_attempts: 200
+    spawn_max_dist_to_obj: 2.0
+    base_angle_noise: 0.523599
+    spawn_max_dist_to_obj_delta: 0.02
+    recep_place_shrink_factor: 0.8
+    ee_sample_factor: 0.2
+    ee_exclude_region: 0.0
+    base_noise: 0.05
+    spawn_region_scale: 0.2
+    joint_max_impulse: -1.0
+    desired_resting_position: [0.5, 0.0, 1.0]
+    use_marker_t: True
+    cache_robot_init: False
+    success_state: 0.0
+    should_enforce_target_within_reach: False
+    task_spec_base_path: "weka/scratch/tshu2/hshi33/habitat/example_scenario/configuration"
+    task_spec: "set_up_table"
+    pddl_domain_def: "hssd-hab"
+    obj_succ_thresh: 0.3
+    enable_safe_drop: False
+    art_succ_thresh: 0.15
+    robot_at_thresh: 2.0
+    min_distance_start_agents: -1.0
+    actions: 
+      stop:
+        type: "RearrangeStopAction"
+  simulator:
+    forward_step_size: 0.25  
+    turn_angle: 10  
+    create_renderer: False
+    requires_textures: True
+    auto_sleep: False
+    step_physics: True
+    concur_render: False
+    needs_markers: True
+    update_articulated_agent: True
+    scene: ""
+    scene_dataset: ""
+    seed: 100
+    debug_render: False
+    debug_render_articulated_agent: False
+    kinematic_mode: False
+    should_setup_semantic_ids: True
+    debug_render_goal: True
+    robot_joint_start_noise: 0.0
+    ctrl_freq: 120.0
+    ac_freq_ratio: 4
+    load_objs: True
+    hold_thresh: 0.15
+    grasp_impulse: 10000.0
+    default_agent_navmesh: False
+    navmesh_include_static_objects: False
+    habitat_sim_v0:
+      gpu_device_id: 0
+      gpu_gpu: False
+      allow_sliding: True
+      frustum_culling: True
+      enable_physics: True
+      enable_hbao: True
+      physics_config_file: "/weka/scratch/tshu2/hshi33/habitat/habitat-lab/data/default.physics_config.json"
+      leave_context_with_background_renderer: False
+      enable_gfx_replay_save: False
+    ep_info: None
+    object_ids_start: 100
+    renderer:
+      enable_batch_renderer: False
+      composite_files: None
+      classic_replay_renderer: False
+    type: RearrangeSim-v0
+    additional_object_paths:
+      - "/weka/scratch/tshu2/hshi33/habitat/habitat-lab/data/objects/ycb/configs/"
+      - "/weka/scratch/tshu2/hshi33/habitat/habitat-lab/hssd-hab/objects/train_val/ai2thorhab/configs/objects/"
+      - "/weka/scratch/tshu2/hshi33/habitat/habitat-lab/hssd-hab/objects/train_val/amazon_berkeley/configs/"
+      - "/weka/scratch/tshu2/hshi33/habitat/habitat-lab/hssd-hab/objects/train_val/google_scanned/configs/"
+      - "/weka/scratch/tshu2/hshi33/habitat/habitat-lab/hssd-hab/objects/train_val/hssd/configs/objects/"
+    default_agent_id: 0
+    agents_order: [agent_0, agent_1]
+    agents:
+      agent_0:
+        height: 1.5
+        radius: 0.1
+        max_climb: 0.2
+        max_slope: 45.0
+        grasp_managers: 1
+        sim_sensors:
+          third_rgb:
+            type: "HabitatSimRGBSensor"
+            uuid: "third_rgb"
+            width: 512
+            height: 512
+          head_rgb:
+            type: "HabitatSimRGBSensor"
+            uuid: "head_rgb"
+            width: 256
+            height: 256
+        is_set_start_state: False
+        start_position: [0, 0, 0]
+        start_rotation: [0, 0, 0, 1]
+        joint_start_noise: 0.1
+        joint_that_can_control: None
+        joint_start_override: None
+        ik_arm_urdf: None
+        articulated_agent_urdf: '/weka/scratch/tshu2/hshi33/habitat/habitat-lab/data/hab3_bench_assets/humanoids/female_0/female_0.urdf'
+        articulated_agent_type: 'KinematicHumanoid'
+        motion_data_path: '/weka/scratch/tshu2/hshi33/habitat/habitat-lab/data/hab3_bench_assets/humanoids/female_0/female_0_motion_data_smplx.pkl'
+      agent_1:
+        height: 1.5
+        radius: 0.1
+        max_climb: 0.2
+        max_slope: 45.0
+        grasp_managers: 1
+        sim_sensors:
+          third_rgb:
+            type: "HabitatSimRGBSensor"
+            uuid: "third_rgb"
+            width: 512
+            height: 512
+          head_rgb:
+            type: "HabitatSimRGBSensor"
+            uuid: "head_rgb"
+            width: 256
+            height: 256
+        is_set_start_state: False
+        start_position: [0, 0, 0]
+        start_rotation: [0, 0, 0, 1]
+        joint_start_noise: 0.1
+        joint_that_can_control: None
+        joint_start_override: None
+        ik_arm_urdf: None
+        articulated_agent_urdf: "/weka/scratch/tshu2/hshi33/habitat/habitat-lab/data/hab3_bench_assets/humanoids/female_0/female_0.urdf"
+        articulated_agent_type: "KinematicHumanoid"
+        motion_data_path: "/weka/scratch/tshu2/hshi33/habitat/habitat-lab/data/hab3_bench_assets/humanoids/female_0/female_0_motion_data_smplx.pkl" 
+    sim_sensors: None
+  dataset:
+    type: "RearrangeDataset-v0"
+    split: "train"
+    scenes_dir: "/weka/scratch/tshu2/hshi33/habitat-lab/hssd-hab/scene_datasets"
+    content_scenes: ["*"]
+    data_path: "/weka/scratch/tshu2/hshi33/habitat/example_scenario/dataset.json.gz"

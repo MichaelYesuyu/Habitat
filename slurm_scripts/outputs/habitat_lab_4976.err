@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/weka/scratch/tshu2/sye10/habitat/python_scripts/scenes/humanAgentScene.py", line 27, in <module>
+    "humanoid_joint_action": HumanoidJointActionConfig(),
+NameError: name 'HumanoidJointActionConfig' is not defined

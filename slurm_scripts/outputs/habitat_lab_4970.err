@@ -1,0 +1,8 @@
+[00:20:44:105006]:[Error]:[IO] JsonStlTypes.h(119)::readMember<std::map<std::basic_string<char>, std::basic_string<char> > > : Invalid string value specified in JSON config semantic_scene_descriptor_instances at default_attributes . Skipping.
+[00:20:44:105058]:[Error]:[IO] JsonStlTypes.h(119)::readMember<std::map<std::basic_string<char>, std::basic_string<char> > > : Invalid string value specified in JSON config semantic_scene_descriptor_instances at paths . Skipping.
+[00:20:44:380378]:[Warning]:[Metadata] MetadataMediator.cpp(578)::getFilePathForHandle : <getSemanticSceneDescriptorPathByHandle> : Unable to find file path for %%CONFIG_NAME_AS_ASSET_FILENAME%%.semantic_config.json , so returning empty string.
+[00:20:44:439035]:[Warning]:[Metadata] MetadataMediator.cpp(578)::getFilePathForHandle : <getSemanticSceneDescriptorPathByHandle> : Unable to find file path for %%CONFIG_NAME_AS_ASSET_FILENAME%%.semantic_config.json , so returning empty string.
+[00:20:44:442872]:[Warning]:[Sim] Simulator.cpp(533)::instanceStageForSceneAttributes : The active scene does not contain semantic annotations : activeSemanticSceneID_ = 0
+MeshTools::compile(): ignoring unknown/unsupported attribute Trade::MeshAttribute::Custom(0)
+MeshTools::compile(): ignoring unknown/unsupported attribute Trade::MeshAttribute::Custom(1)
+[00:20:44:758593]:[Warning]:[Assets] ResourceManager.cpp(945)::createRenderAssetInstance : Instantiating render asset `/weka/scratch/tshu2/sye10/habitat/habitat-sim/data/hab3_bench_assets/humanoids/female_0/female_0.glb` with incompatible light setup, instance will not be correctly lit. For objects, please ensure 'requires lighting' is enabled in object config file.
